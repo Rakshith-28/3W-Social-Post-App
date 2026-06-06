@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(npm install *)",
+      "Bash(node -e \"process.env.MONGODB_URI='x'; require\\('./routes/auth'\\); require\\('./routes/posts'\\); require\\('./routes/users'\\); require\\('./middleware/auth'\\); require\\('./models/User'\\); require\\('./models/Post'\\); console.log\\('All backend modules load OK'\\);\")",
+      "Bash(set CI=true)",
+      "Bash(npm run *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
+    ]
+  }
+}
