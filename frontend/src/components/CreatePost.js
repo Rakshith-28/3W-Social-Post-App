@@ -212,7 +212,21 @@ function CreatePost({ onPostCreated }) {
               variant="contained"
               disabled={!canPost}
               endIcon={!loading && <SendIcon />}
-              sx={{ minWidth: 110, transition: `all 0.3s ${EASING}` }}
+              sx={{
+                minWidth: 120,
+                transition: `all 0.3s ${EASING}`,
+                // Darker gradient + crisp white text so the label never blends in
+                backgroundImage:
+                  'linear-gradient(135deg, #1565c0 0%, #0d47a1 100%)',
+                color: '#ffffff',
+                fontWeight: 700,
+                letterSpacing: '0.4px',
+                textShadow: '0 1px 2px rgba(0, 0, 0, 0.35)',
+                '&:hover': {
+                  backgroundImage:
+                    'linear-gradient(135deg, #1976d2 0%, #0d47a1 100%)',
+                },
+              }}
             >
               {loading ? 'Posting…' : 'Post'}
             </Button>
