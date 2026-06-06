@@ -141,14 +141,14 @@ function Signup({ onAuthSuccess }) {
         overflow: 'hidden',
         py: 4,
         background:
-          'linear-gradient(135deg, #7b1fa2 0%, #6a1b9a 45%, #4a148c 100%)',
+          'linear-gradient(135deg, #e8f1fb 0%, #f5f9ff 50%, #ffffff 100%)',
         ...keyframes,
       }}
     >
-      {/* Animated floating background pattern */}
-      <Blob size={320} color="#ab47bc" top="-70px" right="-50px" delay="0s" />
-      <Blob size={260} color="#4a148c" bottom="-80px" left="-50px" delay="4s" />
-      <Blob size={170} color="#ce93d8" top="35%" left="10%" delay="7s" />
+      {/* Soft light-blue floating accents */}
+      <Blob size={320} color="#bbdefb" top="-70px" right="-50px" delay="0s" />
+      <Blob size={260} color="#90caf9" bottom="-80px" left="-50px" delay="4s" />
+      <Blob size={170} color="#e3f2fd" top="35%" left="10%" delay="7s" />
 
       <Container maxWidth="sm" sx={{ position: 'relative', zIndex: 1 }}>
         <Paper
@@ -157,10 +157,10 @@ function Signup({ onAuthSuccess }) {
             p: { xs: 3, sm: 5 },
             width: '100%',
             borderRadius: 4,
-            bgcolor: 'rgba(255, 255, 255, 0.82)',
+            bgcolor: 'rgba(255, 255, 255, 0.8)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.6)',
-            boxShadow: '0 24px 60px rgba(0, 0, 0, 0.3)',
+            border: '1px solid rgba(255, 255, 255, 0.9)',
+            boxShadow: '0 20px 50px rgba(21, 101, 192, 0.14)',
             animation: `slideUp 600ms ${EASING}`,
           }}
         >
@@ -177,8 +177,8 @@ function Signup({ onAuthSuccess }) {
               justifyContent: 'center',
               color: '#fff',
               backgroundImage:
-                'linear-gradient(135deg, #ab47bc 0%, #6a1b9a 100%)',
-              boxShadow: '0 10px 24px rgba(106, 27, 154, 0.45)',
+                'linear-gradient(135deg, #42a5f5 0%, #1565c0 100%)',
+              boxShadow: '0 10px 24px rgba(21, 101, 192, 0.4)',
               animation: 'bounce 2.2s ease-in-out infinite',
             }}
           >
@@ -349,14 +349,6 @@ function Signup({ onAuthSuccess }) {
                 fontSize: '1rem',
                 position: 'relative',
                 overflow: 'hidden',
-                backgroundImage:
-                  'linear-gradient(135deg, #ab47bc 0%, #6a1b9a 100%)',
-                boxShadow: '0 4px 14px rgba(106, 27, 154, 0.35)',
-                '&:hover': {
-                  backgroundImage:
-                    'linear-gradient(135deg, #9c27b0 0%, #4a148c 100%)',
-                  boxShadow: '0 8px 22px rgba(106, 27, 154, 0.45)',
-                },
                 '&::after': {
                   content: '""',
                   position: 'absolute',
@@ -384,7 +376,7 @@ function Signup({ onAuthSuccess }) {
             <Link
               component={RouterLink}
               to="/login"
-              sx={{ fontWeight: 600, textDecoration: 'none', color: '#6a1b9a' }}
+              sx={{ fontWeight: 600, textDecoration: 'none' }}
             >
               Log in
             </Link>

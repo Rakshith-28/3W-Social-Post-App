@@ -99,14 +99,14 @@ function Login({ onAuthSuccess }) {
         position: 'relative',
         overflow: 'hidden',
         background:
-          'linear-gradient(135deg, #1976d2 0%, #1565c0 55%, #0d47a1 100%)',
+          'linear-gradient(135deg, #e8f1fb 0%, #f5f9ff 50%, #ffffff 100%)',
         ...keyframes,
       }}
     >
-      {/* Animated floating background pattern */}
-      <Blob size={320} color="#42a5f5" top="-80px" left="-60px" delay="0s" />
-      <Blob size={260} color="#0d47a1" bottom="-70px" right="-40px" delay="3s" />
-      <Blob size={180} color="#64b5f6" top="40%" right="12%" delay="6s" />
+      {/* Soft light-blue floating accents */}
+      <Blob size={320} color="#bbdefb" top="-80px" left="-60px" delay="0s" />
+      <Blob size={260} color="#90caf9" bottom="-70px" right="-40px" delay="3s" />
+      <Blob size={180} color="#e3f2fd" top="40%" right="12%" delay="6s" />
 
       <Container maxWidth="sm" sx={{ position: 'relative', zIndex: 1 }}>
         <Paper
@@ -115,10 +115,10 @@ function Login({ onAuthSuccess }) {
             p: { xs: 3, sm: 5 },
             width: '100%',
             borderRadius: 4,
-            bgcolor: 'rgba(255, 255, 255, 0.82)',
+            bgcolor: 'rgba(255, 255, 255, 0.8)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.6)',
-            boxShadow: '0 24px 60px rgba(0, 0, 0, 0.28)',
+            border: '1px solid rgba(255, 255, 255, 0.9)',
+            boxShadow: '0 20px 50px rgba(21, 101, 192, 0.14)',
             animation: `slideUp 600ms ${EASING}`,
           }}
         >
