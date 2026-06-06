@@ -105,6 +105,10 @@ const globalStyles = (
         background: 'linear-gradient(135deg, #f8f9fa 0%, #f5f7fa 100%)',
         backgroundAttachment: 'fixed',
       },
+      // Hide the stray text caret on non-editable elements site-wide,
+      // while keeping a real caret inside actual input fields.
+      '*': { caretColor: 'transparent' },
+      'input, textarea, [contenteditable="true"]': { caretColor: 'auto' },
       '@keyframes fadeIn': {
         from: { opacity: 0 },
         to: { opacity: 1 },
