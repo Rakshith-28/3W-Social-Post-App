@@ -8,7 +8,8 @@
       "Bash(npm run *)",
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(CI=true npx --no-install eslint src/App.js src/components/Navbar.js src/components/CreatePost.js src/components/PostCard.js src/pages/Feed.js)"
     ]
   }
 }
